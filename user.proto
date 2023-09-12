@@ -1,0 +1,17 @@
+syntax = "proto3"
+package users
+
+message req{
+    string mobile = 1;
+    string password = 2;
+
+}
+
+message res{
+    sint32 code = 1;
+    string message = 2;
+}
+
+message bulk{
+    repeated req arrayData = 1; //repeated specifies array
+}
